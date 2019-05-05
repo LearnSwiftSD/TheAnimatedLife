@@ -1,3 +1,5 @@
+//: [Home](Welcome) | [Previous](@previous) | [Next](@next)
+//: # Loading Screen Animation
 import PlaygroundSupport
 import UIKit
 

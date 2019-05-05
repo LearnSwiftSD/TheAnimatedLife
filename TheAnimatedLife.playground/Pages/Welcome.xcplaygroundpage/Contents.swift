@@ -39,7 +39,7 @@
  
  ## Contents:
  
- 1 - [What is Server Side Swift](WhatIsServerSideSwift)
+ 1 - [Loading Animation Example](LoadingAnimation)
  
  2 - [Getting Started with Vapor](GettingStartedWithVapor)
  
