@@ -35,17 +35,18 @@ public extension UIView {
     /**
      Add the gradient color to the view with four directional options to choose from.
      - Parameters:
-     - colors: An Array of colors to make up the gradient
-     - orientation: The direction of the gradient
-     - layerPosition: The postion of the gradient layer in the layer heirarchy
-     - Returns: Void
+        - colors: An Array of colors to make up the gradient
+        - orientation: The direction of the gradient
+        - layerPosition: The postion of the gradient layer in the layer heirarchy
+     - Returns: The added CAGradientLayer
      */
+    @discardableResult
     func addLinearGradient(
         colors: [UIColor],
         bounds: CGRect? = nil,
         orientation: Orientation? = nil,
         layerPosition: UInt32? = nil
-        ) {
+        ) -> CAGradientLayer {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = colors.map { $0.cgColor }
@@ -68,6 +69,7 @@ public extension UIView {
         }
         
         layer.insertSublayer(gradientLayer, at: layerPosition ?? 0)
+        return gradientLayer
     }
     
 }

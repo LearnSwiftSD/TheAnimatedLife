@@ -19,29 +19,33 @@ open class GradientViewController: UIViewController {
         setupButton()
     }
     
-    
     open func runAnimation(button: UIButton) {
-
+        //Implement in overrided method
     }
     
-    @objc private func didTapButton() {
+    @objc
+    private func didTapButton() {
         runAnimation(button: gradientButton)
     }
     
+}
+
+extension GradientViewController {
+    
     private func setupButton() {
-        gradientButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        
         view.addSubview(gradientButton)
         
         gradientButton.useAutoLayout(
-            gradientButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
-            gradientButton.heightAnchor.constraint(equalToConstant: 60),
-            gradientButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            gradientButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 60)
+            gradientButton.widthAnchor
+                .constraint(equalTo: view.widthAnchor, multiplier: 0.8),
+            gradientButton.heightAnchor
+                .constraint(equalToConstant: 60),
+            gradientButton.centerXAnchor
+                .constraint(equalTo: view.centerXAnchor, constant: 0),
+            gradientButton.centerYAnchor
+                .constraint(equalTo: view.centerYAnchor, constant: 60)
         )
-        
-        let buttonBounds = CGRect(x: 0, y: 0, width: 300, height: 60)
-        addGradient(withBounds: buttonBounds)
-        addShadow(withBounds: buttonBounds)
         
         let buttonTitle = NSAttributedString(
             string: "Animated",
@@ -52,19 +56,20 @@ open class GradientViewController: UIViewController {
         )
         
         gradientButton.setAttributedTitle(buttonTitle, for: .normal)
+        gradientButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        let buttonBounds = CGRect(x: 0, y: 0, width: 300, height: 60)
+        addGradient(withBounds: buttonBounds)
+        addShadow(withBounds: buttonBounds)
+        
     }
     
     private func addGradient(withBounds bounds: CGRect) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [
-            UIColor.gradientOrange.light,
-            UIColor.gradientOrange.dark
-            ].map { $0.cgColor }
-        gradientLayer.frame = bounds
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        gradientLayer.cornerRadius = 10
-        gradientButton.layer.insertSublayer(gradientLayer, at: 0)
+        let gradients = UIColor.gradientOrange
+        gradientButton.addLinearGradient(
+            colors: [gradients.light, gradients.dark],
+            bounds: bounds,
+            orientation: .leading
+            ).cornerRadius = 10
     }
     
     private func addShadow(withBounds bounds: CGRect) {
