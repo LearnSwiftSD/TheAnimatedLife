@@ -22,11 +22,11 @@
  
  | Learn Swift SD **[Repo](https://github.com/LearnSwiftSD)**
  
- | Clone this playground in your Terminal from **[https://github.com/LearnSwiftSD/ServerSideSwift.git](https://github.com/LearnSwiftSD/ServerSideSwift.git)**
+ | Clone this playground in your Terminal from **[https://github.com/LearnSwiftSD/TheAnimatedLife.git](https://github.com/LearnSwiftSD/TheAnimatedLife.git)**
  
  ```sh
  cd Desktop
- git clone https://github.com/LearnSwiftSD/ServerSideSwift.git
+ git clone https://github.com/LearnSwiftSD/TheAnimatedLife.git
  ```
  
  ___
@@ -39,9 +39,11 @@
  
  ## Contents:
  
- 1 - [Loading Animation Example](LoadingAnimation)
+ 1 - [Loading Screen Animation](LoadingAnimation)
  
- 2 - [Getting Started with Vapor](GettingStartedWithVapor)
+ 2 - [Scale Bounce Animation](ScaleAnimation)
+ 
+ 4 - [Emitter Animation](EmitterAnimation)
  
  3 - [Resources](Resources)
  */

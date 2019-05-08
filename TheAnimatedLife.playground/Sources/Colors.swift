@@ -21,4 +21,38 @@ public extension UIColor {
         )
     }
     
+    static var gradientGray: (light: UIColor, dark: UIColor) {
+        return (
+            UIColor(
+                red: hex(62),
+                green: hex(72),
+                blue: hex(90),
+                alpha: 1
+            ),
+            UIColor(
+                red: hex(20),
+                green: hex(26),
+                blue: hex(40),
+                alpha: 1
+            )
+        )
+    }
+    
+    static var gradientOrange: (light: UIColor, dark: UIColor) {
+        return (
+            UIColor(
+                red: hex(255),
+                green: hex(191),
+                blue: hex(25),
+                alpha: 1
+            ),
+            UIColor(
+                red: hex(255),
+                green: hex(115),
+                blue: hex(41),
+                alpha: 1
+            )
+        )
+    }
+    
 }

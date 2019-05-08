@@ -3,6 +3,7 @@
     <pages>
         <page name='Welcome'/>
         <page name='LoadingAnimation'/>
+        <page name='ScaleAnimation'/>
         <page name='Resources'/>
     </pages>
 </playground>
