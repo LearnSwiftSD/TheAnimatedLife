@@ -43,7 +43,7 @@
  
  2 - [Scale Bounce Animation](ScaleAnimation)
  
- 4 - [Emitter Animation](EmitterAnimation)
+ 4 - [Transition Animation](TransitionAnimation)
  
  3 - [Resources](Resources)
  */
