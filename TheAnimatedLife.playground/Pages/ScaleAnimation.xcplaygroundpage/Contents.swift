@@ -16,16 +16,14 @@ class ViewController: GradientViewController {
         }
         
         var popBack: (Bool) -> Void {
-            return { completed in
-                guard completed else { return }
-                UIView.animate(
-                    withDuration: 0.35,
-                    delay: 0,
-                    usingSpringWithDamping: 0.4,
-                    initialSpringVelocity: 10,
-                    options: [],
-                    animations: { button.transform = .identity },
-                    completion: nil
+            return { _ in UIView.animate(
+                withDuration: 0.35,
+                delay: 0,
+                usingSpringWithDamping: 0.4,
+                initialSpringVelocity: 10,
+                options: [],
+                animations: { button.transform = .identity },
+                completion: nil
                 )
             }
         }
