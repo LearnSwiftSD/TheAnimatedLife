@@ -3,52 +3,27 @@
  
  # Resources
  
- Here are some of the resources that I found were immensely helpful while on my journey to learning Server Side Swift.
+ Here are some of the resources that I found were immensely helpful while I we were building this playground.
  ___
  
- 1: [Vapor State of the Union](https://youtu.be/_615REC32Ts)
+ 1: [Basics: Animations](https://www.swiftbysundell.com/basics/animations)
  
- YouTube video of Tanner Nelson sharing the current state of Vapor and what to look for in the future.
+ This is a Swift By Sundell article under the Basics category. John Sundell is an excellent resource for learning all things Swift. He posts a new article every Sunday, so keep an eye out.
  ___
  
- 2: [Swift NIO, Vapor, and Server Concurrency](https://youtu.be/RW2vKWiGWr4)
+ 2: [Ray Wenderlich: Animations By Tutorials](https://store.raywenderlich.com/a/46236/link/16)
  
- YouTube video of Logan Wright discussing Swift NIO and the abstractions it uses.
+ This is a book produced by Ray Wenderlich. They produce excellent iOS/Swift and Android/Kotlin learning materials. This particlur book pretty much covers everything you need to know to produce awesome animations and it comes highly recomended.
  ___
  
- 3: [Getting Started with Vapor and Server-Side Swift](https://youtu.be/ReuJImJffI8)
+ 3: [Mark Moeykens: Animations Playlist](https://www.youtube.com/playlist?list=PLHDMmeIMXj8WBu4oV4pHQd7513DVWzoLL)
  
- YouTube video of Tim Condon going over the "Hello World" version of a starter app in Vapor.
+ If you haven't heard of Mark Moeyken, **STOP** what you're doing and click the link. It'll take you to a playlist of his animations tutorial videos. I can't speak highly enough of Mark. He's an iOS developer who has an excellent eye for design/UI/UX and on top of it, he's an excellent teacher as well. Subscribe to his chanel, follow him on Twitter, and watch his content regularly. You won't be sorry.
  ___
  
- 4: [Ray Wenderlich Vapor Tutorials](https://www.raywenderlich.com/4493-server-side-swift-with-vapor)
+ 4: [WWDC: Advanced Animations with UIKit](https://developer.apple.com/videos/play/wwdc2017/230/)
  
- An excellent learning resource, worth the paid subscription.
- ___
- 
- 5: [Hacking with Swift Vapor Tutorial](https://www.hackingwithswift.com/articles/67/get-started-with-vapor-3-for-free)
- 
- A free Vapor tutorial by Paul Hudson.
- ___
- 
- 6: [Hacking with Swift Vapor Book](https://www.hackingwithswift.com/store/server-side-swift)
- 
- A book on Server-Side development in Swift, using Vapor. I purchased this and found it to be a very thorough.
- ___
- 
- 7: [SwiftCraft Podcast - Vapor episode](https://itunes.apple.com/us/podcast/swiftcraft-podcast/id1342090247?mt=2&i=1000428891058)
- 
- An interview with Tim Condon about developing Server-Side Swift with Vapor
- ___
- 
- 8: [BrokenHands.io](https://geeks.brokenhands.io)
- 
- An excellent resource for Vapor blogs and content.
- ___
- 
- 9: [Mock Server with Vapor](https://hackernoon.com/building-an-excellent-mock-server-in-swift-with-vapor-7e25aaa985e6)
- 
- An article by Andrew Scott about using Vapor to build your mock servers.
+ As you may well know, Apple has an annual conference for developers called WWDC. They post many of their presentations online for the public. This one discusses all the new animations api's as well as some of the more advanced techniques. Definetely worth the watch.
  ___
  
  [Home](Welcome) | [Previous](@previous)
