@@ -16,7 +16,7 @@ class ViewController: TransitionViewController, TransitionViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        transitionView.delegate = self
+        #warning("Assign the transitionView.delegate here")
     }
     
     func didRequestTransition(
@@ -26,19 +26,9 @@ class ViewController: TransitionViewController, TransitionViewDelegate {
         using transitionStyle: UIView.AnimationOptions
         ) -> TransitionView.Position {
         
-        let newOption: UIView.AnimationOptions = position == .primary
-            ? .transitionFlipFromRight
-            : .transitionFlipFromLeft
-
-        UIView.transition(
-            from: currentView,
-            to: nextView,
-            duration: 1.0,
-            options: [newOption, .showHideTransitionViews],
-            completion: nil
-        )
+        #warning("Animation Implementations Here")
         
-        return position.toggled
+        return position
     }
     
 }

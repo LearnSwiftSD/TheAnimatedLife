@@ -19,33 +19,7 @@ class ViewController: GradientViewController {
  the animation here.
  */
     override func runAnimation(button: UIButton) {
-        
-        func shrinkButton () -> Void {
-            let shrink = CGAffineTransform(scaleX: 0.95, y: 0.95)
-            let shrinkAndScoot = shrink.translatedBy(x: 0, y: 6)
-            button.transform = shrinkAndScoot
-        }
-        
-        func popBack(_ ignored: Bool) -> Void {
-            UIView.animate(
-                withDuration: 0.35,
-                delay: 0,
-                usingSpringWithDamping: 0.4,
-                initialSpringVelocity: 10,
-                options: [],
-                animations: { button.transform = .identity },
-                completion: nil
-            )
-        }
-        
-        UIView.animate(
-            withDuration: 0.1,
-            delay: 0,
-            options: [.curveEaseIn],
-            animations: shrinkButton,
-            completion: popBack
-        )
-        
+        #warning("Animation Implementations Here")
     }
     
 }
