@@ -1,5 +1,14 @@
-//: [Home](Welcome) | [Previous](@previous) | [Next](@next)
-//: # Transition Animation
+/*:
+ [Home](Welcome) | [Previous](@previous) | [Next](@next)
+ # Transition Animation
+ 
+ 
+ ___
+ 
+ Transition animations are a great way to reveal new information are a change in state.
+ Additionally, UIKit has several excellent premade ones ready to go out of the box. There's a
+ little setup that needs to be done with them though. Let's take a look.
+ */
 import UIKit
 import PlaygroundSupport
 

@@ -1,16 +1,27 @@
-//: [Home](Welcome) | [Previous](@previous) | [Next](@next)
-//: # Loading Screen Animation
+/*:
+ [Home](Welcome) | [Previous](@previous) | [Next](@next)
+ # Loading Screen Animation
+ 
+ ___
+ 
+ Loading animations are a great way to provide visual interest and help to transition into the app.
+ In this example we're going to do just that. We've provided an overlay to the Login Screen of an
+ app that is identical to the loading image. When loading is complete we'll provide an animation
+ that removes that overlay and transitions to the login screen.
+ */
 import PlaygroundSupport
 import UIKit
-//: This allows us to do run time-based executions
+
+// Setup to simulate the transition between a loading screen and the app
 PlaygroundPage.current.needsIndefiniteExecution = true
-//: Create the LoadingExample which is a `UINavigationController`
 let loadingExample = LoadingExample.create()
-//: This assigns the loadingExample as the Live View to the right
 PlaygroundPage.current.liveView = loadingExample
-//: Example controller to do our animations in.
+
 class AnimatedLoginController: LoginViewController {
-//: Provide your animation implementation here in `runLoadingAnimation`.
+/*:
+ This `runLoadingAnimation` method gets called when loading has been completed. Provide your
+ implementation of the animation here.
+ */
     override func runLoadingAnimation(logo: UIView, background: UIView) {
         
         let degrees = CGFloat(180 * Double.pi / 180)
@@ -43,7 +54,7 @@ class AnimatedLoginController: LoginViewController {
     
 }
 
-//: This simulates the completion of Loading an app.
+// This activates the transition to the app.
 executeAfter(2) {
     loadingExample.pushViewController(AnimatedLoginController(), animated: false)
 }
